@@ -19,7 +19,7 @@ A web-based email spam classifier using Naive Bayes algorithm. This project demo
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Ni-zav/bayesian-email-spam-classifier
 cd bayesian-spam-classifier
 ```
 
