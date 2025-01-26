@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Spam Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <h1>Bayesian Spam Classifier</h1>
+            <div class="content-wrapper">
+                <div class="input-section">
+                    <form method="POST">
+                        <textarea name="message" placeholder="Enter your email message here..." required></textarea>
+                        <button type="submit">Classify</button>
+                    </form>
+                    {% if prediction %}
+                        <h2>Prediction: <span class="{{ prediction }}">{{ prediction }}</span></h2>
+                    {% endif %}
+                </div>
+                <div class="explanation-section">
+                    <div class="bubble">
+                        <h3>How It Works</h3>
+                        <p>This spam classifier uses Bayes' Theorem, a fundamental concept in probability theory and statistics. Here's how it works:</p>
+                        <ol>
+                            <li>The classifier analyzes patterns in known spam and non-spam emails.</li>
+                            <li>It calculates the probability of specific words appearing in spam versus legitimate emails.</li>
+                            <li>When analyzing a new email, it uses these probabilities to make a prediction.</li>
+                        </ol>
+                        <p>The formula used is:</p>
+                        <div class="formula">
+                            P(Spam|Words) = P(Words|Spam) × P(Spam) / P(Words)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Created by Nizav. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
