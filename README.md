@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ## Dataset Setup
 
-1. Download the email dataset (emails.csv) and place it in the project root directory. Dataset can be download from the kaggle.com [here](https://www.kaggle.com/datasets/balaka18/email-spam-classification-dataset-csv/data)
+1. Download the email dataset (emails.csv) and place it in the project root directory. Dataset can be download from the kaggle.com [here](https://www.kaggle.com/datasets/balaka18/email-spam-classification-dataset-csv/data).
 
 ## Training the Model
 
